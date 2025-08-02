@@ -12,29 +12,41 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #34b7a7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #222222;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #34b7a7;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #34b7a7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #34b7a7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #444444;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #34b7a7;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #34b7a7;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -171,7 +183,7 @@ h6 {
 
 .header .header-social-links {
   padding-right: 15px;
-  
+
 }
 
 .header .header-social-links a {
@@ -596,7 +608,8 @@ h6 {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: #25D366; /* cor WhatsApp */
+  background: #25D366;
+  /* cor WhatsApp */
   color: white;
   font-size: 24px;
   border-radius: 50%;
@@ -620,8 +633,10 @@ h6 {
   }
 
   .hero img {
-  object-position: 80% 30%;
-}
+    object-position: 80% 30%;
+  }
+
+
 
 
 }
@@ -789,11 +804,15 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
+    margin: 250px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.151);
   }
 
   .hero p {
     font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.151);
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -1231,19 +1250,35 @@ section.skills {
 @media (max-width: 575px) {
 
   .header .logo img {
-  max-height: 40px;
-  margin-right: 8px;
-  margin-left: 0;
-}
+    max-height: 40px;
+    margin-right: 8px;
+    margin-left: 0;
+  }
 
-.hero img {
-  object-position: 80% 30%;
-}
+  .hero img {
+    object-position: 80% 30%;
+  }
+
+  .hero .col-lg-8 h2 {
+    margin: 250px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+
+  .hero .col-lg-8 p {
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+
+  .whatsapp-btn {
+    top: 85px;
+    right: 20px;
+  }
 
   .portfolio .portfolio-filters li {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+
+
 }
 
 .portfolio .portfolio-item {
@@ -1426,6 +1461,8 @@ section.skills {
   .contact .php-email-form {
     padding: 20px;
   }
+
+
 }
 
 .contact .php-email-form input[type=text],
